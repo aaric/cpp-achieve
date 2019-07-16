@@ -1,7 +1,14 @@
-# cpp-achieve
-C++ Game Learning.
+# Visual C++ Achieve
+> C++ Game Learning.
 
-## 0704
+#### Project List
+|序号|项目名称|备注|
+|:--:|------|---|
+|1|E01Hello|第1个Hello World控制台程序|
+|2|E02HelloWin|第1个Windows窗体程序|
+|3|E03MoveRect|作业：0704|
+
+## 一、笔记-0704
 1. Hello World
 2. Windows
 3. 作业
@@ -9,7 +16,7 @@ C++ Game Learning.
     - 使用键盘控制矩形上下左右运动
 
 
-## 0711
+## 二、笔记-0711
 1. 静态站LIB
 2. 兼容性
 3. C++语法

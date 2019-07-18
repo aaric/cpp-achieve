@@ -20,7 +20,7 @@ FLOAT2 Rect::GetPos()
 }
 
 // 移动位置,返回新位置坐标(单位:米)
-FLOAT2 Rect::move(float fDeltaX, float fDeltaY)
+FLOAT2 Rect::Move(float fDeltaX, float fDeltaY)
 {
 	m_fx += fDeltaX;
 	m_fy += fDeltaY;

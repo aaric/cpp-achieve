@@ -3,6 +3,7 @@
 // π© E02HelloWin.rc  π”√
 //
 #define IDI_ICONAPP                     102
+#define WM_CAR_MOVING	WM_USER+1
 
 // Next default values for new objects
 // 

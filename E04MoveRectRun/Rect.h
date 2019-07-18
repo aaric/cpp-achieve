@@ -12,7 +12,7 @@ public:
 	// 获取当前位置(单位:米)
 	inline FLOAT2 GetPos();
 	// 移动位置,返回新位置坐标(单位:米)
-	FLOAT2 move(float fDeltaX, float fDeltaY);
+	FLOAT2 Move(float fDeltaX, float fDeltaY);
 protected:
 	// 长(单位:米)
 	static const float c_fLength;

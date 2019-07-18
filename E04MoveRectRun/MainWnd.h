@@ -30,7 +30,7 @@ private:
 
 	const float c_fMaxFPS = 100.0f;
 
-	Rect m_rect;
+	Rect m_car;
 	HPEN m_hDotPen;
 	HBRUSH m_hbrCar;
 	HDC m_hdcMem;

@@ -175,8 +175,8 @@ void MainWnd::Render(HDC& hdc, RECT& rc)
 
 	// 车辆
 	RECT rcCar;
-	FLOAT2 pos = m_rect.GetPos();
-	FLOAT2 size = m_rect.GetSize();
+	FLOAT2 pos = m_car.GetPos();
+	FLOAT2 size = m_car.GetSize();
 	rcCar.left = static_cast<int>(1000.0f * (pos.x - size.x / 2.0f));
 	rcCar.right = static_cast<int>(1000.0f * (pos.x + size.x / 2.0f));
 	rcCar.top = static_cast<int>(1000.0f * (pos.y + size.y / 2.0f));
@@ -233,7 +233,7 @@ LRESULT MainWnd::OnCarMoving(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 	// 如果需要移动车辆
 	if (iX != 0 || iY != 0) {
-		m_rect.Move(fDeltaX, fDeltaY);
+		m_car.Move(fDeltaX, fDeltaY);
 		InvalidateRect(hwnd, NULL, FALSE);
 	}
 

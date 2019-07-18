@@ -37,6 +37,10 @@ private:
 	HBITMAP m_hBmp;
 	LARGE_INTEGER m_i64Freq;
 
+	// --------------- Aaric ---------------
+	float stepMoveY = 0;
+	// --------------- Aaric ---------------
+
 	// 渲染
 	void Render(HDC& hdc, RECT& rc);
 	// 设定坐标系

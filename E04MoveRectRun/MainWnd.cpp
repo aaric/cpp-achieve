@@ -209,10 +209,19 @@ void MainWnd::OnKeyUpDown(HWND hwnd, UINT vk, BOOL fDown, int cRepeat, UINT flag
 	switch (vk)
 	{
 	case VK_UP:
-	case VK_DOWN:
-	case VK_LEFT:
-	case VK_RIGHT:
+	//case VK_DOWN:
+	//case VK_LEFT:
+	//case VK_RIGHT:
+		//PostMessage(hwnd, WM_CAR_MOVING, 0, 0);
+
+		// --------------- Aaric ---------------
+		stepMoveY = stepMoveY + 1;
+
 		PostMessage(hwnd, WM_CAR_MOVING, 0, 0);
+		for (int i = 0; i < 100000; i++) {
+			// like sleep
+		}
+		// --------------- Aaric ---------------
 		break;
 	default:
 		break;
@@ -232,10 +241,14 @@ LRESULT MainWnd::OnCarMoving(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 	float fDeltaY = c_fStep * iY;
 
 	// 如果需要移动车辆
-	if (iX != 0 || iY != 0) {
+	/*if (iX != 0 || iY != 0) {
 		m_car.Move(fDeltaX, fDeltaY);
 		InvalidateRect(hwnd, NULL, FALSE);
-	}
+	}*/
+
+	// 匀速移动车辆
+	m_car.Move(0, c_fStep * stepMoveY);
+	InvalidateRect(hwnd, NULL, FALSE);
 
 	return 0L;
 }

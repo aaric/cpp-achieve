@@ -32,3 +32,15 @@
     - 加速度
     - 最大速度
 
+## 三、笔记-0718
+1. BitBlt
+2. QueryPerformanceFrequency
+3. SIMD
+4. CPU(`R` `R` `W` `D` `B` `I` `F` `F`)
+5. MSAA(MMX/SSE/AVX/FMA/AVX512)
+8. 作业
+    - Java
+    - y = ax+b
+    - total = sum(8000y)
+    - 执行10万次
+

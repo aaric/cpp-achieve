@@ -42,5 +42,8 @@
     - Java
     - y = ax+b
     - total = sum(8000y)
-    - 执行10万次
+    - 执行1万次
 
+## 三、笔记-0718
+1. Ray Tracing
+2. Z-Buffer

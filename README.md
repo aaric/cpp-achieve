@@ -44,6 +44,11 @@
     - total = sum(8000y)
     - 执行1万次
 
-## 三、笔记-0718
+## 三、笔记-0801
 1. Ray Tracing
 2. Z-Buffer
+
+## 四、笔记-0808
+1. DirectX
+2. OpenGL(Vulkan)
+3. Metal
